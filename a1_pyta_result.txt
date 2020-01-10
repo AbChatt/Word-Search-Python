@@ -1,0 +1,8 @@
+puzzle_functions.py
+=== Code errors/forbidden usage (fix: high priority) ===
+None!
+
+=== Style/convention errors (fix: before submission) ===
+None!
+
+

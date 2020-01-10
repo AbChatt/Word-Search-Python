@@ -1,0 +1,273 @@
+Autotested Results for a1 submitted by Abhishek Chatterjee (chatt114)
+Generated at 2018-10-09T15:38:33
+
+Summary of Results: 69 out of 74 tests successfully passed
+--
+
+Tests for test_01_get_current_player.TestGetCurrentPlayer (2/2 passed)
+--
+
+1) test_01_get_current_player.TestGetCurrentPlayer.test_01_get_current_player_one     .. ok!
+2) test_01_get_current_player.TestGetCurrentPlayer.test_02_get_current_player_two     .. ok!
+
+
+Tests for test_02_get_winner.TestGetWinner (3/3 passed)
+--
+
+1) test_02_get_winner.TestGetWinner.test_01_get_winner_one                            .. ok!
+2) test_02_get_winner.TestGetWinner.test_02_get_winner_two                            .. ok!
+3) test_02_get_winner.TestGetWinner.test_03_get_winner_tie                            .. ok!
+
+
+Tests for test_03_reverse.TestReverse (3/3 passed)
+--
+
+1) test_03_reverse.TestReverse.test_01_reverse_empty                                  .. ok!
+2) test_03_reverse.TestReverse.test_02_reverse_single                                 .. ok!
+3) test_03_reverse.TestReverse.test_03_reverse_multiple                               .. ok!
+
+
+Tests for test_04_get_row.TestGetRow (7/7 passed)
+--
+
+1) test_04_get_row.TestGetRow.test_01_length_1_row_0                                  .. ok!
+2) test_04_get_row.TestGetRow.test_02_length_2_row_0                                  .. ok!
+3) test_04_get_row.TestGetRow.test_03_length_2_row_1                                  .. ok!
+4) test_04_get_row.TestGetRow.test_04_length_4_row_0                                  .. ok!
+5) test_04_get_row.TestGetRow.test_05_length_4_row_1                                  .. ok!
+6) test_04_get_row.TestGetRow.test_06_length_4_row_2                                  .. ok!
+7) test_04_get_row.TestGetRow.test_07_length_4_row_3                                  .. ok!
+
+
+Tests for test_05_get_factor.TestGetFactor (4/4 passed)
+--
+
+1) test_05_get_factor.TestGetFactor.test_01_get_factor_forward                        .. ok!
+2) test_05_get_factor.TestGetFactor.test_02_get_factor_down                           .. ok!
+3) test_05_get_factor.TestGetFactor.test_03_get_factor_backward                       .. ok!
+4) test_05_get_factor.TestGetFactor.test_04_get_factor_up                             .. ok!
+
+
+Tests for test_06_get_points.TestGetPoints (12/12 passed)
+--
+
+1) test_06_get_points.TestGetPoints.test_01_above_threshold_forward                   .. ok!
+2) test_06_get_points.TestGetPoints.test_02_above_threshold__down                     .. ok!
+3) test_06_get_points.TestGetPoints.test_03_above_threshold__backward                 .. ok!
+4) test_06_get_points.TestGetPoints.test_04_at_threshold__up                          .. ok!
+5) test_06_get_points.TestGetPoints.test_05_below_threshold_forward                   .. ok!
+6) test_06_get_points.TestGetPoints.test_06_below_threshold_down                      .. ok!
+7) test_06_get_points.TestGetPoints.test_07_below_threshold_backward                  .. ok!
+8) test_06_get_points.TestGetPoints.test_08_below_threshold_up                        .. ok!
+9) test_06_get_points.TestGetPoints.test_09_one_word_forward                          .. ok!
+10) test_06_get_points.TestGetPoints.test_10_one_word_down                             .. ok!
+11) test_06_get_points.TestGetPoints.test_11_one_word_backward                         .. ok!
+12) test_06_get_points.TestGetPoints.test_12_one_word_up                               .. ok!
+
+
+Tests for test_07_check_guess.TestCheckGuess (7/11 passed)
+--
+
+1) test_07_check_guess.TestCheckGuess.test_01_off_by_one_errors_forward               .. ok!
+2) test_07_check_guess.TestCheckGuess.test_02_off_by_one_errors_down                  .. ok!
+3) test_07_check_guess.TestCheckGuess.test_03_simple_substrings_forward               .. ok!
+4) test_07_check_guess.TestCheckGuess.test_04_simple_substrings_backward              .. ok!
+5) test_07_check_guess.TestCheckGuess.test_05_simple_substrings_down                  .. ok!
+6) test_07_check_guess.TestCheckGuess.test_06_simple_substrings_up                    .. ok!
+7) test_07_check_guess.TestCheckGuess.test_11_check_guess                             .. ok!
+8) test_07_check_guess.TestCheckGuess.test_07_wrong_direction_forward                 .. failed
+.. because 5 != 0 : 
+When we called check_guess(self.puzzle, 'forward', 'BA', 0, 7), we expected this:
+0
+but your code returned this:
+5 (details below):
+
+    Traceback (most recent call last):
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+        yield
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 615, in run
+        testMethod()
+
+      File "/cmsfaculty/tafliovi/csca08fall2018/assignments/a1/marking/uam_marking/submissions/chatt114/test_07_check_guess.py", line 168, in test_07_wrong_direction_forward
+        self.assertEqual(returned, expected, msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 839, in assertEqual
+        assertion_func(first, second, msg=msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 832, in _baseAssertEqual
+        raise self.failureException(msg)
+
+    AssertionError: 5 != 0 : 
+    When we called check_guess(self.puzzle, 'forward', 'BA', 0, 7), we expected this:
+    0
+    but your code returned this:
+    5
+
+
+9) test_07_check_guess.TestCheckGuess.test_08_wrong_direction_backward                .. failed
+.. because 15 != 0 : 
+When we called check_guess(self.puzzle, 'backward', 'AB', 0, 6), we expected this:
+0
+but your code returned this:
+15 (details below):
+
+    Traceback (most recent call last):
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+        yield
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 615, in run
+        testMethod()
+
+      File "/cmsfaculty/tafliovi/csca08fall2018/assignments/a1/marking/uam_marking/submissions/chatt114/test_07_check_guess.py", line 176, in test_08_wrong_direction_backward
+        self.assertEqual(returned, expected, msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 839, in assertEqual
+        assertion_func(first, second, msg=msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 832, in _baseAssertEqual
+        raise self.failureException(msg)
+
+    AssertionError: 15 != 0 : 
+    When we called check_guess(self.puzzle, 'backward', 'AB', 0, 6), we expected this:
+    0
+    but your code returned this:
+    15
+
+
+10) test_07_check_guess.TestCheckGuess.test_09_wrong_direction_down                    .. failed
+.. because 10 != 0 : 
+When we called check_guess(self.puzzle, 'down', 'EA', 0, 8), we expected this:
+0
+but your code returned this:
+10 (details below):
+
+    Traceback (most recent call last):
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+        yield
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 615, in run
+        testMethod()
+
+      File "/cmsfaculty/tafliovi/csca08fall2018/assignments/a1/marking/uam_marking/submissions/chatt114/test_07_check_guess.py", line 184, in test_09_wrong_direction_down
+        self.assertEqual(returned, expected, msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 839, in assertEqual
+        assertion_func(first, second, msg=msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 832, in _baseAssertEqual
+        raise self.failureException(msg)
+
+    AssertionError: 10 != 0 : 
+    When we called check_guess(self.puzzle, 'down', 'EA', 0, 8), we expected this:
+    0
+    but your code returned this:
+    10
+
+
+11) test_07_check_guess.TestCheckGuess.test_10_wrong_direction_up                      .. failed
+.. because 20 != 0 : 
+When we called check_guess(self.puzzle, 'up', 'AE', 0, 7), we expected this:
+0
+but your code returned this:
+20 (details below):
+
+    Traceback (most recent call last):
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+        yield
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 615, in run
+        testMethod()
+
+      File "/cmsfaculty/tafliovi/csca08fall2018/assignments/a1/marking/uam_marking/submissions/chatt114/test_07_check_guess.py", line 192, in test_10_wrong_direction_up
+        self.assertEqual(returned, expected, msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 839, in assertEqual
+        assertion_func(first, second, msg=msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 832, in _baseAssertEqual
+        raise self.failureException(msg)
+
+    AssertionError: 20 != 0 : 
+    When we called check_guess(self.puzzle, 'up', 'AE', 0, 7), we expected this:
+    0
+    but your code returned this:
+    20
+
+
+
+
+Tests for test_08_constants.TestConstants (2/2 passed)
+--
+
+1) test_08_constants.TestConstants.test_01_get_factor                                 .. ok!
+2) test_08_constants.TestConstants.test_02_get_points                                 .. ok!
+
+
+Tests for test_09_docstrings.TestDocstrings (29/30 passed)
+--
+
+1) test_09_docstrings.TestDocstrings.test_10_annotation_test_reverse                  .. ok!
+2) test_09_docstrings.TestDocstrings.test_11_exists_test_get_row                      .. ok!
+3) test_09_docstrings.TestDocstrings.test_12_return_test_get_row                      .. ok!
+4) test_09_docstrings.TestDocstrings.test_13_varname_test_get_row                     .. ok!
+5) test_09_docstrings.TestDocstrings.test_14_example_test_get_row                     .. ok!
+6) test_09_docstrings.TestDocstrings.test_15_annotation_test_get_row                  .. ok!
+7) test_09_docstrings.TestDocstrings.test_16_exists_test_get_factor                   .. ok!
+8) test_09_docstrings.TestDocstrings.test_17_return_test_get_factor                   .. ok!
+9) test_09_docstrings.TestDocstrings.test_18_varname_test_get_factor                  .. ok!
+10) test_09_docstrings.TestDocstrings.test_19_example_test_get_factor                  .. ok!
+11) test_09_docstrings.TestDocstrings.test_1_exists_test_get_winner                    .. ok!
+12) test_09_docstrings.TestDocstrings.test_20_annotation_test_get_factor               .. ok!
+13) test_09_docstrings.TestDocstrings.test_21_exists_test_get_points                   .. ok!
+14) test_09_docstrings.TestDocstrings.test_22_return_test_get_points                   .. ok!
+15) test_09_docstrings.TestDocstrings.test_23_varname_test_get_points                  .. ok!
+16) test_09_docstrings.TestDocstrings.test_24_example_test_get_points                  .. ok!
+17) test_09_docstrings.TestDocstrings.test_25_annotation_test_get_points               .. ok!
+18) test_09_docstrings.TestDocstrings.test_26_exists_test_check_guess                  .. ok!
+19) test_09_docstrings.TestDocstrings.test_27_return_test_check_guess                  .. ok!
+20) test_09_docstrings.TestDocstrings.test_29_example_test_check_guess                 .. ok!
+21) test_09_docstrings.TestDocstrings.test_2_return_test_get_winner                    .. ok!
+22) test_09_docstrings.TestDocstrings.test_30_annotation_test_check_guess              .. ok!
+23) test_09_docstrings.TestDocstrings.test_3_varname_test_get_winner                   .. ok!
+24) test_09_docstrings.TestDocstrings.test_4_example_test_get_winner                   .. ok!
+25) test_09_docstrings.TestDocstrings.test_5_annotation_test_get_winner                .. ok!
+26) test_09_docstrings.TestDocstrings.test_6_exists_test_reverse                       .. ok!
+27) test_09_docstrings.TestDocstrings.test_7_return_test_reverse                       .. ok!
+28) test_09_docstrings.TestDocstrings.test_8_varname_test_reverse                      .. ok!
+29) test_09_docstrings.TestDocstrings.test_9_example_test_reverse                      .. ok!
+30) test_09_docstrings.TestDocstrings.test_28_varname_test_check_guess                 .. failed
+.. because {'words_left'} is not false : 
+check_guess's docstring does not list all of its parameters by name.
+Missing : ['words_left']
+ (details below):
+
+    Traceback (most recent call last):
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+        yield
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 615, in run
+        testMethod()
+
+      File "/cmsfaculty/tafliovi/csca08fall2018/assignments/a1/marking/uam_marking/submissions/chatt114/test_09_docstrings.py", line 129, in <lambda>
+        new_test = lambda self, f=f, test=test: test(self, f)
+
+      File "/cmsfaculty/tafliovi/csca08fall2018/assignments/a1/marking/uam_marking/submissions/chatt114/test_09_docstrings.py", line 75, in varname_test
+        self.assertFalse(missing, msg)
+
+      File "/usr/local/cms/python3.7/lib/python3.7/unittest/case.py", line 686, in assertFalse
+        raise self.failureException(msg)
+
+    AssertionError: {'words_left'} is not false : 
+    check_guess's docstring does not list all of its parameters by name.
+    Missing : ['words_left']
+
+
+
+
+
